@@ -1,0 +1,183 @@
+/*
+font-family: 'Imperial Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Pushster', cursive;
+font-family: 'Sacramento', cursive;
+*/
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(50px, auto));
+}
+
+/*Styling the header*/
+header{
+    background-color: #47615fa9;
+    grid-column: 1 / span 3;
+    border-bottom: solid 1px #c6c1c1;
+            
+}
+
+header .nav-section{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+}
+
+header .nav-section nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header .nav-section nav li a:hover{
+    background-color: #40554b;
+    color: white;
+}
+header .nav-section li a{  
+    text-decoration: none; 
+    padding: 1.3rem;
+    font-weight: bolder;
+    color: black;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-family: 'Imperial Script', cursive;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+       
+}
+
+header .logo p{
+    margin: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+header .logo a{
+    text-decoration: none;
+}
+
+
+/*Styling the main*/
+main{
+    
+    grid-column: 1 / span 3;
+    background-color: #40554b71;
+}
+/*About Me Section*/
+main .about-me-section{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    
+}
+
+.about-me-image{
+    background-image: url("../images/DSC_6844.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-me-image h1{    
+    position: relative;
+    top: 22rem;
+    left: 7rem;
+    font-family: 'Pushster', cursive;
+    font-size: 5rem;
+    color: cornsilk;
+    background-color: rgba(44, 44, 40, 0.479);
+    width: 21rem;
+    margin: 0;
+    
+}
+
+.about-me-text{
+    padding: 1rem;
+    background-color: rgba(13, 39, 95, 0.788);
+    color: white;
+    line-height: 1.6;
+}
+
+/*Skill Section*/
+.skill-section{
+    display: flex;
+    flex-direction: column;
+}
+.skill-section-image{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-section-image img{
+    width: 3rem;
+    height: 3rem;
+}
+.skill-section-text h2{
+    margin-top: 4rem ;
+    text-align: center;
+    font-family: 'Pushster', cursive;
+}
+
+/*Project Section*/
+.project-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.project-section h2{
+    margin-top: 4rem ;
+    text-align: center;
+    font-family: 'Pushster', cursive;
+}
+
+.project-section-image{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-section-image img{
+    width: 24rem;
+    height: 24rem;
+    
+}
+
+.project-section p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Styling the footer*/
+footer{
+    background-color: #47615fa9;
+    grid-column: 1 / span 3;
+    
+            
+}
+
+footer .nav-section nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .nav-section nav li a:hover{
+    background-color: #40554b;
+    color: white;
+}
+footer .nav-section li a{  
+    text-decoration: none; 
+    padding: 1.3rem;
+    font-weight: bolder;
+    color: black;
+}
