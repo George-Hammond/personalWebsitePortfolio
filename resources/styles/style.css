@@ -18,6 +18,7 @@ body{
    
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -63,8 +64,7 @@ header .logo{
     font-size: 2.5rem;
     font-family: 'Imperial Script', cursive;
     margin-left: 1rem;
-    margin-top: 0.6rem;
-       
+    margin-top: 0.6rem;       
 }
 
 header .logo p{
@@ -76,6 +76,66 @@ header .logo p a{
     text-decoration: none;
 }
 
+
+
+
+
+@media only screen and (max-width: 910px){
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(50px, auto));
+}
+header{
+    background-color: #47615f;
+    grid-column: 1 / span 3;
+    border-bottom: solid 1px #c6c1c1;
+            
+}
+
+header .nav-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav-section nav ul{    
+    display: flex;
+}
+/**/
+header .nav-section nav a li:hover{
+    background-color: #40554b;
+    color: white;
+}
+
+header .nav-section nav ul a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+header .nav-section a li{  
+    text-decoration: none; 
+    padding: 1.3rem;
+    font-weight: bolder;
+    color: black;
+    
+}
+header .logo{
+    font-size: 2.5rem;
+    font-family: 'Imperial Script', cursive;
+    margin-left: 1rem;
+    margin-top: 0.6rem;       
+}
+
+header .logo p{
+    margin: 0.5rem;
+}
+header .logo p a{
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+}
 
 /*Styling the main*/
 main{
@@ -109,7 +169,13 @@ main .about-me-section{
     color: white;
     line-height: 1.6;
 }
-
+@media only screen and (max-width: 910px){
+    main .about-me-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 /*Skill Section*/
 .skill-section{
     display: flex;
@@ -157,6 +223,14 @@ main .about-me-section{
 .project-section p{
     text-align: center;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 910px){
+    .project-section-image img{
+        width: 14rem;
+        height: 14rem;
+        
+    }
 }
 
 /*Contact Section*/
@@ -211,10 +285,39 @@ header .logo p a{
     display: flex;
     justify-self: center;
 }
+
+#or{
+    display: none;
+}
+@media only screen and (max-width: 910px){
+    .contact-section-grid main{
+        margin-top: 6rem;
+        grid-column: 1 / span;
+        display: flex;
+        flex-direction: column;
+        background-color: #c6c1c1;
+        align-items: center;
+    }
+    form{
+        width: 31rem;
+        height: 25rem;
+        background-color: #40554b71 ;
+        border-radius: 2rem;
+        text-align: center;
+    }
+
+    form h1{
+        font-size: 1.5rem;
+    }
+
+    #or{
+        display: block;
+    }
+}
 /*Forms Section*/
 form{
-    width: 31rem;
-    height: 25rem;
+    width: 25rem;
+    height: 20rem;
     background-color: #40554b71 ;
     border-radius: 2rem;
     text-align: center;
