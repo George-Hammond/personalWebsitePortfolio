@@ -14,6 +14,8 @@ html{
 
 body{
     margin: 0;
+    background-color: #c6c1c1;
+   
 }
 
 .grid {
@@ -24,7 +26,7 @@ body{
 
 /*Styling the header*/
 header{
-    background-color: #47615fa9;
+    background-color: #47615f;
     grid-column: 1 / span 3;
     border-bottom: solid 1px #c6c1c1;
             
@@ -36,20 +38,26 @@ header .nav-section{
     align-items: center;
 }
 
-header .nav-section nav ul{
-    list-style: none;
+header .nav-section nav ul{    
     display: flex;
 }
-
-header .nav-section nav li a:hover{
+/**/
+header .nav-section nav a li:hover{
     background-color: #40554b;
     color: white;
 }
-header .nav-section li a{  
+
+header .nav-section nav ul a{
+    list-style: none;
+    text-decoration: none; 
+}
+
+header .nav-section a li{  
     text-decoration: none; 
     padding: 1.3rem;
     font-weight: bolder;
     color: black;
+    
 }
 header .logo{
     font-size: 2.5rem;
@@ -61,10 +69,10 @@ header .logo{
 
 header .logo p{
     margin: 0.5rem;
-    color: rgb(0, 0, 0);
 }
-
-header .logo a{
+header .logo p a{
+    
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -82,27 +90,20 @@ main .about-me-section{
     
 }
 
-.about-me-image{
-    background-image: url("../images/DSC_6844.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.about-me-image img{
+    width: 100%;
+    height: 100%;
+   
 }
 
 .about-me-image h1{    
-    position: relative;
-    top: 22rem;
-    left: 7rem;
     font-family: 'Pushster', cursive;
-    font-size: 5rem;
+    font-size: 2rem;
     color: cornsilk;
-    background-color: rgba(44, 44, 40, 0.479);
-    width: 21rem;
-    margin: 0;
-    
+        
 }
 
-.about-me-text{
+#about-me-text{
     padding: 1rem;
     background-color: rgba(13, 39, 95, 0.788);
     color: white;
@@ -145,6 +146,7 @@ main .about-me-section{
 .project-section-image{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .project-section-image img{
     width: 24rem;
@@ -157,6 +159,69 @@ main .about-me-section{
     font-weight: bolder;
 }
 
+/*Contact Section*/
+.contact-section-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(50px, auto));
+
+}
+
+header .logo p{
+    margin: 0.5rem;
+}
+header .logo p a{
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.contact-section-grid header{
+    background-color: #47615fa9;
+    grid-column: 1 / span 2;
+    border-bottom: solid 1px #c6c1c1;
+}
+
+.contact-section-grid main{
+    margin-top: 6rem;
+    grid-column: 1 / span;
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    background-color: #c6c1c1;
+}
+/*Social Media Section*/
+.social-media-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-section p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+.social-media-section img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 2rem;
+
+}
+
+.social-media-images{
+    display: flex;
+    justify-self: center;
+}
+/*Forms Section*/
+form{
+    width: 31rem;
+    height: 25rem;
+    background-color: #40554b71 ;
+    border-radius: 2rem;
+    text-align: center;
+}
+hr {
+    width: 20%;
+}
 /*Styling the footer*/
 footer{
     background-color: #47615fa9;

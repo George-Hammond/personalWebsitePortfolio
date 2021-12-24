@@ -3,52 +3,64 @@
     <head>
         <title>Contact Me</title>
         <link rel="stylesheet" type="text/css" href="./resources/styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,400;1,100&family=Poppins&family=Quicksand&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pushster&family=Sacramento&display=swap" rel="stylesheet">
         <script src="./resources/script/main.js" async></script>
     </head>
     <body>
         <div class="contact-section-grid">
             <header>
-                <div class="logo">
-                    <a href="index.html"><p>Geo. Hammond</p></a>
-                </div>
+                
                 <div class="nav-section">
+                    <div class="logo">
+                    <p><a href="index.html">Geo. Hammond</a></p>
+                </div>
                     <nav>
                         <ul role="presentation">
-                            <li><a href="./index.html#about-me">About Me</a></li>
-                            <li><a href="./index.html#my-skills">Skills</a></li>
-                            <li><a href="./index.html#my-projects">Projects</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <a href="./index.html#about-me"><li>About Me</li></a>
+                            <a href="./index.html#my-skills"><li>Skills</li></a>
+                            <a href="./index.html#my-projects"><li>Projects</li></a>
+                            <a href="./contact.html"><li>Contact</li></a>
                         </ul>
                     </nav>
                 </div>					
             </header>
             <main>
                 <div class="social-media-section">
-                    <a href="https://web.facebook.com/hammondgeorge2009/?_rdc=1&_rdr"><img src="./resources/images/icons/fb.png" alt="facebook icon leading to George's Facebook page"></a>
-                    <a href="https://twitter.com/1real_Boi_H"><img src="./resources/images/icons/tweet.png" alt="twitter icon leading to George's twitter page""></a>
-                    <a href="https://www.instagram.com/1real_boi_h/"><img src="./resources/images/icons/ig.png" alt="instagram icon leading to George's instagram page""></a>
-                    <a href="https://www.linkedin.com/in/employgeorge-hammond-33a2b5140/"><img src="./resources/images/icons/ln.png" alt="LinkedIn icon leading to to George's linkedIn page""></a>
-                    <a href="mailto:george.hammond@amalitech.org"><img src="./resources/images/icons/icons8-gmail-100.png" alt= "Gmail icon leading to George's mail"> </a>
+                    <div class="social-media-text">
+                        <p>Contact me on these social media platforms</p>
+                    </div>
+                    <div class="social-media-images">
+                        <a href="https://web.facebook.com/hammondgeorge2009/?_rdc=1&_rdr"><img src="./resources/images/icons/fb.png" alt="facebook icon leading to George's Facebook page"></a>
+                        <a href="https://twitter.com/1real_Boi_H"><img src="./resources/images/icons/tweet.png" alt="twitter icon leading to George's twitter page""></a>
+                        <a href="https://www.instagram.com/1real_boi_h/"><img src="./resources/images/icons/ig.png" alt="instagram icon leading to George's instagram page""></a>
+                        <a href="https://www.linkedin.com/in/employgeorge-hammond-33a2b5140/"><img src="./resources/images/icons/ln.png" alt="LinkedIn icon leading to to George's linkedIn page""></a>
+                        <a href="mailto:george.hammond@amalitech.org"><img src="./resources/images/icons/icons8-gmail-100.png" alt= "Gmail icon leading to George's mail"> </a> 
+                    </div>
+                    
                 </div>
+                <div class="forms-section">
+                    <form action="" method="post">
+                        <h1>Please do leave a message!</h1>
+                        <input type="text" name="full-name" value="" id="ful-name">
+                        <br>
+                        <label for="full-name" >Enter full name</label>
+                        <hr>
+                        <input type="text" name="full-name" value="" id="ful-name">
+                        <br>
+                        <label for="full-name" >Enter enter your email address</label>
+                        <hr>
+                        <textarea id="message" name="mesage" rows="5" cols="30">
+                        </textarea>
+                        <br>
+                        <label for="full-name" >Leave your message</label>
+                        <hr>
+                        <input type="submit" value="Submit">
+                    </form>
             </main>
-        </div> 
-        <div class="forms-section">
-            <form action="" method="post">
-                <h1>Please do leave a message!</h1>
-                <input type="text" name="full-name" value="" id="ful-name">
-                <br>
-                <label for="full-name" >Enter full name</label>
-                <hr>
-                <input type="text" name="full-name" value="" id="ful-name">
-                <br>
-                <label for="full-name" >Enter enter your email address</label>
-                <hr>
-                <textarea id="message" name="mesage" rows="5" cols="30">
-                </textarea>
-                <br>
-                <label for="full-name" >Leave your message</label>
-                <hr>
-            </form>
-        </div>       
+        
+            
+            </div> 
+        </div>      
     </body>
 </html>
